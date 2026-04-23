@@ -1,59 +1,206 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ⚖️ Legal Operations & Workflow Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A full-featured SaaS platform built for law firms and legal advisors to manage cases, clients, billing, documents, and team operations — all in one place.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 👥 Multi-Role System
+- **Admin** — Full platform control, team management, analytics
+- **Worker (Attorney/Staff)** — Case management, task board, time logging, messaging
+- **Client** — Case tracking, document access, billing, messaging portal
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 📁 Case Management
+- Create, assign, and track legal cases
+- Case notes, status updates, and history
+- Client-case linking with access control
 
-## Learning Laravel
+### 💰 Billing & Payments
+- Payment requests and invoicing
+- Payment confirmation, failure, and refund notifications
+- Subscription plans with upgrade/downgrade support
+- Membership cancellation flow
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 📅 Calendar & Scheduling
+- Event creation and management
+- Livewire-powered interactive calendar view
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 💬 Messaging
+- Direct messaging between clients, workers, and admins
+- Broadcast messaging (admin to all users)
+- Email notifications for new messages
 
-## Laravel Sponsors
+### 📂 Document Management
+- Upload and manage client documents
+- Worker document creation and indexing
+- Access control via policies
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🤝 CRM
+- Contact management with interaction tracking
+- Kanban-style CRM board (Livewire)
+- Contact detail and edit views
 
-### Premium Partners
+### 🔐 Authentication & Security
+- Email/password registration with email verification
+- Google OAuth login
+- Role-based middleware and permission system
+- Security headers middleware
+- Rate limiting and throttle protection
+- reCAPTCHA integration
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 📊 Analytics
+- Worker analytics dashboard
+- Admin billing and payments dashboard
+- Time logging and reporting
 
-## Contributing
+### 🛠️ Team Management
+- Invite team members via email
+- Role assignment and permission management
+- Livewire team manager interface
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🧱 Tech Stack
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+| Layer | Technology |
+|-------|-----------|
+| Backend | Laravel 11 |
+| Frontend | Blade, Livewire, Tailwind CSS |
+| Database | MySQL |
+| Auth | Laravel Auth + Google OAuth (Socialite) |
+| Payments | Stripe / M-Pesa (via PaymentService) |
+| Real-time | Livewire |
+| Email | Laravel Mail + SMTP |
+| Queue | Laravel Queue (Jobs) |
+| Storage | Laravel Filesystem (local/S3) |
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## ⚙️ Installation
 
-## License
+### Requirements
+- PHP 8.2+
+- Composer
+- Node.js & NPM
+- MySQL
+- Laravel 11
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/Samuelnganga7933/SAAS-Legal-Platform.git
+cd SAAS-Legal-Platform
+
+# Install PHP dependencies
+composer install
+
+# Install JS dependencies
+npm install && npm run build
+
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Configure your .env (database, mail, payment keys, Google OAuth)
+
+# Run migrations and seeders
+php artisan migrate --seed
+
+# Start the server
+php artisan serve
+```
+
+---
+
+## 🔑 Environment Variables
+
+Key variables to configure in your `.env`:
+
+```env
+APP_NAME="Legal Platform"
+APP_URL=http://localhost
+
+DB_CONNECTION=mysql
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
+MAIL_MAILER=smtp
+MAIL_HOST=your_mail_host
+MAIL_USERNAME=your_mail_username
+MAIL_PASSWORD=your_mail_password
+
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+STRIPE_KEY=your_stripe_key
+STRIPE_SECRET=your_stripe_secret
+
+RECAPTCHA_SITE_KEY=your_recaptcha_site_key
+RECAPTCHA_SECRET_KEY=your_recaptcha_secret_key
+```
+
+---
+
+## 👤 Default Seeded Users
+
+After running `php artisan migrate --seed`:
+
+| Role | Email | Password |
+|------|-------|----------|
+| Admin | admin@example.com | password |
+| CEO | ceo@example.com | password |
+| Test Client | client@example.com | password |
+
+> ⚠️ Change these credentials immediately in production.
+
+---
+
+## 📁 Project Structure
+
+```
+app/
+├── Http/Controllers/     # All controllers (Admin, Client, Worker, Auth, etc.)
+├── Livewire/             # Livewire components (Calendar, CRM, Tasks, Messaging)
+├── Models/               # Eloquent models
+├── Services/             # PaymentService, EmailVerificationService
+├── Notifications/        # Payment and email notifications
+├── Policies/             # Authorization policies
+resources/
+├── views/
+│   ├── admin/            # Admin dashboard views
+│   ├── client/           # Client portal views
+│   ├── worker/           # Worker dashboard views
+│   ├── auth/             # Login, register, verify
+│   └── livewire/         # Livewire component views
+database/
+├── migrations/           # All database migrations
+└── seeders/              # Admin, CEO, and test user seeders
+```
+
+---
+
+## 🛡️ Security
+
+- All routes protected by role-based middleware
+- CSRF protection on all forms
+- Security headers via middleware
+- Input validation on all requests
+- Email verification required before access
+- Rate limiting on auth and API routes
+
+---
+
+## 📜 License
+
+This project is proprietary software. All rights reserved.
+
+---
+
+## 🙋 Support
+
+For support or inquiries, please contact the development team.
