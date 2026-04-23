@@ -1,0 +1,17 @@
+/* Parallax Zoom-Out Effect */
+[data-parallax] {
+  transform: scale(1.03) translateY(0px);
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+/* Smooth transitions during scroll */
+[data-parallax].parallax-active {
+  transition: none;
+}
+
+/* Optional: Stagger effect for child elements */
+[data-parallax-child] {
+  transform: scale(1.02) translateY(0px);
+  will-change: transform;
+}

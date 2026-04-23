@@ -1,0 +1,452 @@
+@extends('layouts.app')
+
+@section('title', 'Le Nium Legal - Remote Guidance & Support Services')
+
+@section('content')
+
+<!-- Hero Section -->
+<section id="hero" class="relative min-h-screen flex items-center justify-center pt-32 pb-20 px-4">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="w-full h-full object-cover">
+        <source src="/videos/ackground Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay for Better Text Readability -->
+    <div class="bg-black/40"></div>
+
+    <div class="container mx-auto relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                Le Nium Legal
+            </h1>
+            <p class="text-2xl md:text-3xl text-white/90 mb-4">Global Guidance & Support Services</p>
+            <p class="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
+                Information, resources, and operational support for your business — globally and remotely.
+            </p>
+            <p class="text-lg text-white/75 mb-8 max-w-2xl mx-auto">
+                Offering guidance and informational support in legal operations, compliance, and accounting services. Not a regulated law firm.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#create-account" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold flex items-center justify-center gap-2">
+                    Create Account
+                </a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition-colors font-semibold">
+                    Book a Call
+                </a>
+                <a href="mailto:leniumtradinggroup@outlook.com" class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white/10 transition-colors font-semibold">
+                    Email Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Info Section -->
+<section class="py-12 px-4 bg-blue-600">
+    <div class="container mx-auto">
+        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+            <div class="text-white">
+                <div class="text-4xl font-bold mb-2">3</div>
+                <p class="text-blue-100">Locations<br/>UK • US • Dubai</p>
+            </div>
+            <div class="text-white">
+                <div class="text-4xl font-bold mb-2">100%</div>
+                <p class="text-blue-100">Remote<br/>Service Delivery</p>
+            </div>
+            <div class="text-white">
+                <div class="text-4xl font-bold mb-2">B2B+B2C</div>
+                <p class="text-blue-100">Services<br/>Businesses & Individuals</p>
+            </div>
+        </div>
+    </div>Us</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">What we provide and who we serve</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Who We Are -->
+            <div class="bg-blue-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Who We Are</h3>
+                <p class="text-gray-700">
+                    We provide informational support, guidance resources, and procedural help across legal operations and accounting domains — tailored for businesses and individuals (B2B + B2C) in the UK, US, Dubai and globally.
+                </p>
+            </div>
+
+            <!-- Business Support -->
+            <div class="bg-blue-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Business Support (B2B)</h3>
+                <p class="text-gray-700">
+                    Guidance and resources for companies navigating compliance, setup, and operational needs.
+                </p>
+            </div>
+
+            <!-- Individual Support -->
+            <div class="bg-blue-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Individual Support (B2C)</h3>
+                <p class="text-gray-700">
+                    Informational assistance for individuals and startup founders seeking guidance.
+                </p>
+            </div>
+
+            <!-- Global & Remote -->
+            <div class="bg-blue-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Global & Remote</h3>
+                <p class="text-gray-700">
+                    Operating across UK, US, and Kenya — 100% remote service delivery.
+                </pli class="flex gap-3">
+                        <span class="text-blue-600 font-bold flex-shrink-0">✓</span>
+                        <span>24/7 advisory support</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-blue-50 rounded-2xl p-8">
+                <div class="space-y-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">1000+</div>
+                        <p class="text-gray-600">Traders Served</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                        <p class="text-gray-600">Countries Covered</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">24/7</div>
+                        <p class="text-gray-600">Support Available</p>Service Overviews</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Guidance, support, and resources tailored to your needs</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Business Setup Guidance</h3>
+                <p class="text-gray-600 mb-4">Informational support for business registration and setup procedures in the UK, US, and Kenya.</p>
+                <p class="text-sm font-semibold text-blue-600">UK • US • Kenya</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Compliance & Regulatory Support Information</h3>
+                <p class="text-gray-600 mb-4">General guidance on compliance requirements and regulatory frameworks — not legal advice.</p>
+                <p class="text-sm font-semibold text-blue-600">All Regions</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Document Preparation & Templates</h3>
+                <p class="text-gray-600 mb-4">Access to document templates and preparation resources for common business needs.</p>
+                <p class="text-sm font-semibold text-blue-600">Global</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Accounting & Reporting Guidance</h3>
+                <p class="text-gray-600 mb-4">Informational support for accounting processes, bookkeeping, and financial reporting.</p>
+                <p class="text-sm font-semibold text-blue-600">UK • US • Kenya</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Remote Assistance & Workflow Support</h3>
+                <p class="text-gray-600 mb-4">Ongoing operational support and guidance delivered 100% remotely.</p>
+                <p class="text-sm font-semibold text-blue-600">Global</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Resources & Information Hub</h3>
+                <p class="text-gray-600 mb-4">Access to curated resources, guides, and informational materials for your business journey.</p>
+                <p class="text-sm font-semibold text-blue-600">Global
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Financial Structuring</h3>
+                <p class="text-gray-600">Optimize your trading structure for legal and tax efficiency</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow">
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Risk Management</h3>
+                <p class="text-gray-600">Mitigate legal and operational risks in your trading business</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-20 px-4 bg-white">
+    <div class="container mx-auto" data-parallax>
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">How It Works</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Simple steps to get the support you need</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-8">
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white font-bold text-lg">1</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Connect / Submit Inquiry</h3>
+                        <p class="text-gray-600">Reach out via email or WhatsApp to tell us what you need</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white font-bold text-lg">2</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Discuss Needs</h3>
+                        <p class="text-gray-600">We will discuss your requirements through mail or WhatsApp</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white font-bold text-lg">3</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Receive Support Packets</h3>
+                        <p class="text-gray-600">Get customized support packets, templates, and resources</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600 text-white font-bold text-lg">4</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Sign Up for Membership</h3>
+                        <p class="text-gray-600">Create an account for ongoing access and support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="py-20 px-4 bg-slate-50">
+    <div class="container mx-auto" data-parallax>
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Client Feedback</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Here's what our users say...</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <p class="text-gray-600 mb-4">"Le Nium Legal provided excellent guidance for setting up our UK business. The templates and support materials were incredibly helpful."</p>
+                <p class="font-semibold text-slate-900">James M.</p>
+                <p class="text-sm text-gray-600">Small Business Owner</p>
+                <p class="text-sm text-blue-600">📍 UK</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <p class="text-gray-600 mb-4">"As a first-time founder, I needed clear information about compliance requirements. The team was responsive and provided valuable resources through WhatsApp."</p>
+                <p class="font-semibold text-slate-900">Amara K.</p>
+                <p class="text-sm text-gray-600">Individual Startup Founder</p>
+                <p class="text-sm text-blue-600">📍 Kenya</p>
+            </div>
+
+            <div class="bg-white rounded-xl p-8 shadow-md">
+                <p class="text-gray-600 mb-4">"The remote support model works perfectly for our distributed team. Quick responses and practical guidance that helped streamline our accounting processes."</p>
+                <p class="font-semibold text-slate-900">David R.</p>
+                <p class="text-sm text-gray-600">Remote Enterprise Client</p>
+                <p class="text-sm text-blue-600">📍 US</p>
+            </div>
+        </div>
+
+        <p class="text-center text-gray-500 text-sm mt-8">Disclaimer: Reviews reflect individual experiences; results may vary. We do not claim regulated legal outcomes.</p>
+    </div>
+</section>
+
+<!-- Create Account Section -->
+<section id="create-account" class="py-20 px-4 bg-white">
+    <div class="container mx-auto max-w-2xl">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Create Your Account</h2>
+            <p class="text-xl text-gray-600">Register to access our client portal and resources</p>
+        </div>
+
+        <form action="{{ route('account.store') }}" method="POST" class="space-y-4 bg-slate-50 p-8 rounded-xl">
+            @csrf
+            
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Account Type *</label>
+                <div class="flex gap-4">
+                    <label class="flex items-center">
+                        <input type="radio" name="account_type" value="business" required class="mr-2">
+                        <span class="text-gray-700">Business (B2B)</span>
+                    </label>
+                    <label class="flex items-center">
+                        <input type="radio" name="account_type" value="individual" required class="mr-2">
+                        <span class="text-gray-700">Individual (B2C)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Full Name *</label>
+                <input type="text" name="full_name" required placeholder="John Smith" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Email Address *</label>
+                <input type="email" name="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Password *</label>
+                <input type="password" name="password" required placeholder="Min. 8 characters" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Confirm Password *</label>
+                <input type="password" name="password_confirmation" required placeholder="Confirm password" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Company/Organization *</label>
+                <input type="text" name="company" required placeholder="Your Company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold text-slate-900 mb-2">Country *</label>
+                <select name="country" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <option value="">Select a country</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="us">United States</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="dubai">Dubai</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="flex items-start gap-2">
+                <input type="checkbox" id="terms" name="terms" required class="mt-1">
+                <label for="terms" class="text-sm text-gray-600">I agree to the Terms of Use and Privacy Policy *</label>
+            </div>
+
+            <div class="flex items-start gap-2">
+                <input type="checkbox" id="disclaimer" name="disclaimer" required class="mt-1">
+                <label for="disclaimer" class="text-sm text-gray-600">I understand that Le Nium Legal provides informational support and guidance only, and is not a regulated law firm or licensed legal practice. *</label>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                Create Account
+            </button>
+        </form>
+
+        <p class="text-center text-gray-600 mt-4">Already have an account? <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold">Sign In</a></p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-4 bg-slate-50">
+    <div class="container mx-auto" data-parallax>
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Contact & Connect</h2>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Ready to get started? Reach out to us today</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-8">Get in Touch</h3>
+
+                <div class="space-y-6 mb-12">
+                    <a href="mailto:leniumtradinggroup@outlook.com" class="flex items-start gap-4 p-4 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-600 mb-1">Email</div>
+                            <div class="text-lg font-semibold text-slate-900">leniumtradinggroup@outlook.com</div>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/254104921009" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 p-4 bg-green-50 rounded-xl hover:bg-green-100 transition-colors">
+                        <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h3.5a1 1 0 011 .82l.553 2.763a1 1 0 01-.832 1.167l-1.933-.484a11.001 11.001 0 008.441 8.441l.484-1.933a1 1 0 011.167-.832l2.763.553A1 1 0 0117 13.5V17a1 1 0 01-1 1A16 16 0 013 2a1 1 0 01-1-1z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-600 mb-1">WhatsApp Business</div>
+                            <div class="text-lg font-semibold text-slate-900">+254 104 921 009</div>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/leniumtradinggroup?igsh=NXdybnVwOW9waWV3" target="_blank" rel="noopener noreferrer" class="flex items-start gap-4 p-4 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors">
+                        <div class="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm3.6 12c0 1.99-1.61 3.6-3.6 3.6s-3.6-1.61-3.6-3.6 1.61-3.6 3.6-3.6 3.6 1.61 3.6 3.6z"/></svg>
+                        </div>
+                        <div>
+                            <div class="text-sm text-gray-600 mb-1">Instagram</div>
+                            <div class="text-lg font-semibold text-slate-900">@leniumtradinggroup</div>
+                        </div>
+                    </a>
+                </div>
+
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Available Globally</h3>
+                <p class="text-gray-600 mb-4">100% remote support across:</p>
+                <div class="space-y-2 text-gray-700">
+                    <p>🇬🇧 United Kingdom</p>
+                    <p>🇺🇸 United States</p>
+                    <p>🇰🇪 Kenya</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <h3 class="text-2xl font-bold text-slate-900 mb-8">Send us a Message</h3>
+
+                <form action="{{ route('contact.store') }}" method="POST" class="space-y-4">
+                    @csrf
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-900 mb-2">I am contacting as: *</label>
+                        <div class="flex gap-4">
+                            <label class="flex items-center">
+                                <input type="radio" name="contact_type" value="business" required class="mr-2">
+                                <span class="text-gray-700">Business (B2B)</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="radio" name="contact_type" value="individual" required class="mr-2">
+                                <span class="text-gray-700">Individual (B2C)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <input type="text" name="company_name" placeholder="Your Company Ltd" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    
+                    <input type="email" name="email" required placeholder="info@company.com" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    
+                    <select name="country" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <option value="">Select a country</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="us">United States</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <textarea name="message" required placeholder="Tell us how we can help you..." rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+                    
+                    <div class="flex items-start gap-2">
+                        <input type="checkbox" id="contact-disclaimer" name="contact_disclaimer" required class="mt-1">
+                        <label for="contact-disclaimer" class="text-sm text-gray-600">I understand that Le Nium Legal provides informational support and guidance only, and is not a regulated law firm or licensed legal practice. *</label>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Important Disclaimers Section -->
+<section class="py-20 px-4 bg-slate-900 text-white">
+    <div class="container mx-auto max-w-4xl">
+        <h2 class="text-4xl font-bold mb-8">Important Disclaimers</h2>
+        <p class="text-gray-300 mb-4">Le Nium Legal provides informational support and guidance only. We are not a regulated law firm. <a href="/disclaimer" class="text-blue-400 hover:text-blue-300">Read full disclaimer</a></p>
+    </div>
+</section>
+
+@endsection
